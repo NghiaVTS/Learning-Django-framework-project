@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}aboutus main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %} 
+    <main>
+        <section class="scbanner">
+            <img src="{% static "img/vechungtoi/banner-bg.jpg"%}" alt="banner-bg" class="scbanner__bg">
+            <div class="container">
+                <div class="scbanner__textbox">
+                    <h3 class="scbanner__textbox-header">VỀ CHÚNG TÔI</h3>
+                    <div class="scbanner__textbox-path">
+                        <p class="main">TRANG CHỦ</p>
+                        <span></span>
+                        <p class="linked">TRUYỀN THÔNG</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scssr">
+            <div class="container">
+                <img src="{% static "img/vechungtoi/sunset-thumbnail.jpg"%}" alt="sunset-thumbnail" class="scssr__thumbnail">
+                <div class="scssr__textbox">
+                    <h2 class="header">Sunset Sorrento
+                        Restaurant</h2>
+                    <p class="desc">Wherever we are, we belong to a food community, our presence in the world requires
+                        interdependency. This is what direct
+                        contact with the Earth reveals to us. Wherever we are, we belong to a food community, our
+                        presence in the world requires
+                        interdependency. This is what direct contact with the Earth reveals to us.</p>
+                    <div class="bottom">
+                        <div class="awards">
+                            <h3 class="title">My Awards</h3>
+                            <div class="links">
+                                <a href="#">Awards</a>
+                                <a href="#">Awards</a>
+                                <a href="#">Awards</a>
+                                <a href="#">Awards</a>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <h3 class="title">Contact</h3>
+                            <div class="info">
+                                <span>EMAIL:</span>
+                                <p>info@sunsetrestaurant</p>
+                            </div>
+                            <div class="info">
+                                <span>PHONE:</span>
+                                <p>+33 125 15 26 36</p>
+                            </div>
+                            <div class="fanpages">
+                                <a href="#" class="twitter" target="_blank"><img
+                                        src="{% static "img/Trangchu/footer-twitter-icon.png"%}" alt="footer-twitter-icon"></a>
+                                <a href="#" class="facebook" target="_blank"><img src="{% static "img/Trangchu/footer-fb-icon.png"%}"
+                                        alt="footer-fb-icon"></a>
+                                <a href="#" class="LinkedIn" target="_blank"><img src="{% static "img/Trangchu/footer-lnd-icon.png"%}"
+                                        alt="footer-lnd-icon"></a>
+                                <a href="#" class="instagram" target="_blank"><img
+                                        src="{% static "img/Trangchu/footer-ins-icon.png"%}" alt="footer-ins-icon"></a>
+                                <a href="#" class="youtube" target="_blank"><img src="{% static "img/Trangchu/footer-yt-icon.png"%}"
+                                        alt="footer-yt-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scmovebg">
+            <div class="container">
+                <img src="{% static "img/vechungtoi/moveable-img.jpg"%}" alt="moveable-img">
+            </div>
+        </section>
+        <section class="sccontents">
+            <div class="container">
+                <div class="item">
+                    <img class="icon" src="{% static "img/Trangchu/Trangchu-menu-icon.png"%}" alt="Trangchu-menu-icon">
+                    <div class="box">
+                        <h4 class="title">Tầm nhin</h4>
+                        <p class="desc">For each dish, the growth of every element & the selection
+                            For each dish, the growth of every element & the selection</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="icon" src="{% static "img/Trangchu/Trangchu-menu-icon.png"%}" alt="Trangchu-menu-icon">
+                    <div class="box">
+                        <h4 class="title">Sứ mệnh</h4>
+                        <p class="desc">For each dish, the growth of every element & the selection
+                            For each dish, the growth of every element & the selection</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="icon" src="{% static "img/Trangchu/Trangchu-menu-icon.png"%}" alt="Trangchu-menu-icon">
+                    <div class="box">
+                        <h4 class="title">Giá trị cốt lõi</h4>
+                        <p class="desc">For each dish, the growth of every element & the selection
+                            For each dish, the growth of every element & the selection</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}

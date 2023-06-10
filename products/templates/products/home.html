@@ -1,0 +1,447 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}My restaurant{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}home main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %}    
+
+    <main>
+        <section class="scherobanner">
+            <img src="{% static "img/Trangchu/Trangchu-herobanner.jpg" %}" alt="Trangchu-herobanner" class="scherobanner__bg">
+            <!-- <div class="arrow-left">
+                <div class="wrap"><img src="img/Trangchu/Trangchu-thongdiep-arrowicon-left.png" alt="arrow-left"
+                        class="slide"></div>
+            </div>
+            <div class="arrow-right">
+                <div class="wrap"><img src="img/Trangchu/Trangchu-thongdiep-arrowicon-right.png" alt="arrow-right"
+                        class="slide"></div>
+            </div> -->
+            <div class="scherobanner__item">
+                <img src="{% static "img/Trangchu/Trangchu-banner-logo.png" %}" alt="Trangchu-banner-logo"
+                    class="scherobanner__item-logo">
+
+                <h1 class="scherobanner__item-title">Taste Royale Cuisine</h1>
+                <h3 class="scherobanner__item-info">FEEL THE AROMA</h3>
+                <a class="scherobanner__item-btn btn-blue" href="services.html"><span>KHÁM PHÁ THÊM</span></a>
+            </div>
+        </section>
+        <section class="scfd">
+            <div class="container">
+                <div class="scfd__item">
+                    <div class="scfd__item-logo"><img src="{% static "img/Trangchu/Trangchu-menu-icon.png" %}"
+                            alt="Trangchu-menu-icon"></div>
+                    <div class="textbox">
+                        <h4 class="header">Fresh Products</h4>
+                        <p class="desc">For each dish, the growth of every element & the selection</p>
+                    </div>
+                    <a class="scfd__item-btn" href="dichvu-chitiet.html"><span>KHÁM PHÁ THÊM</span></a>
+                </div>
+                <div class="scfd__item">
+                    <div class="scfd__item-logo"><img src="{% static "img/Trangchu/Trangchu-menu-icon2.png" %}"
+                            alt="Trangchu-menu-icon2"></div>
+                    <div class="textbox">
+                        <h4 class="header">Skilled Chefs</h4>
+                        <p class="desc">For each dish, the growth of every element & the selection</p>
+                    </div>
+                    <a class="scfd__item-btn" href="dichvu-chitiet.html"><span>KHÁM PHÁ THÊM</span></a>
+                </div>
+                <div class="scfd__item">
+                    <div class="scfd__item-logo"><img src="{% static "img/Trangchu/Trangchu-menu-icon3.png" %}"
+                            alt="Trangchu-menu-icon3"></div>
+                    <div class="textbox">
+                        <h4 class="header">Best Bar</h4>
+                        <p class="desc">For each dish, the growth of every element & the selection</p>
+                    </div>
+                    <a class="scfd__item-btn" href="dichvu-chitiet.html"><span>KHÁM PHÁ THÊM</span></a>
+                </div>
+                <div class="scfd__item">
+                    <div class="scfd__item-logo"><img src="{% static "img/Trangchu/Trangchu-menu-icon4.png" %}"
+                            alt="Trangchu-menu-icon4"></div>
+                    <div class="textbox">
+                        <h4 class="header">Healthy food</h4>
+                        <p class="desc">For each dish, the growth of every element & the selection</p>
+                    </div>
+                    <a class="scfd__item-btn" href="dichvu-chitiet.html">KHÁM PHÁ THÊM</a>
+                </div>
+            </div>
+        </section>
+        <section class="scos">
+            <div class="container">
+                <img src="{% static "img/Trangchu/Trangchu-betw-thumbnail.jpg" %}" alt="Trangchu-betw-thumbnail" class="scos__img">
+                <div class="scos__content textbox">
+                    <p class="section">Our Services</p>
+                    <h3 class="header">Between Heaven & Earth</h3>
+                    <span class="after"></span>
+                    <p class="desc">The character and philosophy of our type of cuisine, which follows the ancestral
+                        technique of using different types of
+                        firewood, fire, charcoal and the scented trace of the smoke, inherently results in a limitation
+                        on the number of diners
+                        that we can accommodate without sacrificing our essence.</p>
+                    <p class="note">Whisper to us about your feelings, and we will prepare what you need now.</p>
+                    <a href="services.html" class="btn-blue">KHÁM PHÁ THÊM</a>
+                </div>
+            </div>
+        </section>
+        <section class="scto">
+            <img src="{% static "img/Trangchu/Trangchu-tryour-padding.png" %}" alt="Trangchu-tryour-padding" class="padding left">
+            <img src="{% static "img/Trangchu/Trangchu-tryour-padding.png" %}" alt="Trangchu-tryour-padding" class="padding right">
+            <div class="container">
+                <div class="scto__header header_box">
+                    <p class="section">From Our Menu</p>
+                    <h3 class="title">Try Our Special Offers</h3>
+                    <span class="before-after"></span>
+                </div>
+                <div class="scto__price">
+                    <div class="scto__price-menu left">
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Raw Scallops from Erquy</h4>
+                                    <p class="number">1.000.000đ</p>
+                                </div>
+                                <p class="spec">Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Tender Octopus and Fennel
+                                    </h4>
+                                    <p class="number">1.000.000đ</p>
+
+                                </div>
+                                <p class="spec">Citrus, wild rocket condiment
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Sea Bass Ceviche</h4>
+                                    <p class="number">1.000.000đ</p>
+
+                                </div>
+                                <p class="spec">Avocado, butternut, lime
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Thinly Sliced Brittany Artichokes
+                                    </h4>
+                                    <p class="number">1.000.000đ</p>
+                                </div>
+                                <p class="spec">Citrus, wild rocket condiment
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Celeriac and Truffle Ravioli
+                                    </h4>
+                                    <p class="number">1.000.000đ</p>
+                                </div>
+                                <p class="spec">Roasted langoustine, consommé
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scto__price-menu right">
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Viennese Veal Cutlet</h4>
+                                    <p class="number">1.000.000đ</p>
+
+                                </div>
+                                <p class="spec">Ricotta and spinach gnocchi, Caccio de Pepe</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Corrèze Pan-seared Veal Liver
+                                    </h4>
+                                    <p class="number">1.000.000đ</p>
+
+                                </div>
+                                <p class="spec">Olive oil mashed potato, onion jus
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Cod Filet Cooked on One Side
+                                    </h4>
+                                    <p class="number">1.000.000đ</p>
+                                </div>
+                                <p class="spec">Chorizo, chickpea espuma, pequillos
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Grilled Veal Filet Mignon
+
+                                    </h4>
+                                    <p class="number">1.000.000đ</p>
+
+                                </div>
+                                <p class="spec">Pumpkin, endives with hazelnuts
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wrap">
+                                <div class="content">
+                                    <h4 class="name">Grilled Black Angus Sirloin Steak
+                                    </h4>
+                                    <p class="number">1.000.000đ</p>
+
+                                </div>
+                                <p class="spec">Coin de rue’ potatoes, Béarnaise sauce
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="menu.html" class="btn-blue">KHÁM PHÁ THÊM</a>
+            </div>
+        </section>
+        <section class="scvideo">
+            <img class="scvideo__bg" src="{% static "img/Trangchu/Trangchu-video-img.jpg" %}" alt="Trangchu-video-img">
+            <img class="scvideo__btn video" src="{% static "img/Trangchu/Trangchu-video-playbtn.png" %}"
+                data-src="https://www.youtube.com/embed/oczkkVCYE68" alt="Trangchu-video-playbtn">
+        </section>
+        <section class="scbf">
+            <div class="container">
+                <div class="header_box">
+                    <p class="section">Events</p>
+                    <h3 class="title">Be First Who Read News</h3>
+                    <span class="before-after"></span>
+                </div>
+                <div class="scbf__news blogs">
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/Trangchu/Trangchu-befirst-thumbnail.jpg" %}"
+                                alt="Trangchu-befirst-thumbnail"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/Trangchu/Trangchu-befirst-thumbnail.jpg" %}"
+                                alt="Trangchu-befirst-thumbnail"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/Trangchu/Trangchu-befirst-thumbnail.jpg" %}"
+                                alt="Trangchu-befirst-thumbnail"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sclogo">
+            <div class="container">
+                <img src="{% static "img/Trangchu/Trangchu-sclogo1.png" %}" alt="Trangchu-sclogo1" class="item">
+                <img src="{% static "img/Trangchu/Trangchu-sclogo2.png" %}" alt="Trangchu-sclogo1" class="item">
+                <img src="{% static "img/Trangchu/Trangchu-sclogo3.png" %}" alt="Trangchu-sclogo1" class="item">
+                <img src="{% static "img/Trangchu/Trangchu-sclogo4.png" %}" alt="Trangchu-sclogo1" class="item">
+            </div>
+        </section>
+        <section class="scthongdiep">
+            <div class="scthongdiep__textbox">
+                <div class="textbox">
+                    <p class="section">Thông điệp</p>
+                    <h3 class="header">Be First Who Read News</h3>
+                    <span class="after"></span>
+
+                    <p class="desc">“Because a restaurant’s story is never complete, there is always something new and
+                        wonderful to discover. An evening
+                        spent at Benoit is like boarding a golden ship through a Parisian night.”</p>
+                </div>
+                <div class="author">
+                    <span>Dominicana Rodrigez</span>
+                    <p>Clients of Restaurants</p>
+                </div>
+                <div class="btn-slide">
+                    <img src="{% static "img/Trangchu/Trangchu-thongdiep-arrowicon-left.png" %}" alt="previous" class="previous">
+                    <img src="{% static "img/Trangchu/Trangchu-thongdiep-arrowicon-right.png" %}" alt="next" class="next">
+                </div>
+            </div>
+            <img src="{% static "img/Trangchu/Trangchu-befirst-bg.jpg" %}" alt="Trangchu-befirst-bg" class="scthongdiep__thumbnail">
+        </section>
+        <section class="scpaper">
+            <div class="container">
+                <a class="scpaper__item" href="#">
+                    <img src="{% static "img/Trangchu/Trangchu-ac-thumbnail.jpg" %}" alt="Trangchu-ac-thumbnail"
+                        class="scpaper__item-thumbnail">
+                    <div class="textbox">
+                        <span>Grand World Phú Quốc</span>
+                        <p>Assitant Chef</p>
+                    </div>
+                </a>
+                <a class="scpaper__item" href="#">
+                    <img src="{% static "img/Trangchu/Trangchu-ac-thumbnail2.jpg" %}" alt="Trangchu-ac-thumbnail2"
+                        class="scpaper__item-thumbnail">
+                    <div class="textbox">
+                        <span>Hòn Thơm</span>
+                        <p>Assitant Chef</p>
+                    </div>
+                </a>
+                <a class="scpaper__item" href="diemden-chitiet.html">
+                    <img src="{% static "img/Trangchu/Trangchu-ac-thumbnail3.jpg" %}" alt="Trangchu-ac-thumbnail3"
+                        class="scpaper__item-thumbnail">
+                    <div class="textbox">
+                        <span>Gành Dầu</span>
+                        <p>Assitant Chef</p>
+                    </div>
+                </a>
+                <a class="scpaper__item" href="#">
+                    <img src="{% static "img/Trangchu/Trangchu-ac-thumbnail4.jpg" %}" alt="Trangchu-ac-thumbnail4"
+                        class="scpaper__item-thumbnail">
+                    <div class="textbox">
+                        <span>Quần đảo An Thới</span>
+                        <p>Assitant Chef</p>
+                    </div>
+                </a>
+                <a class="scpaper__item" href="#">
+                    <img src="{% static "img/Trangchu/Trangchu-ac-thumbnail5.jpg" %}" alt="Trangchu-ac-thumbnail5"
+                        class="scpaper__item-thumbnail">
+                    <div class="textbox">
+                        <span>Bãi Dài</span>
+                        <p>Assitant Chef</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="scsf">
+            <div class="container">
+                <div class="scsf__form form">
+                    <img src="{% static "img/Trangchu/Trangchu-form-padding.png" %}" alt="Trangchu-form-padding" class="form-padding">
+                    <span class="padding"></span>
+                    <div class="form-box">
+                        <span class="title">Make a Reserve</span>
+                        <form>
+                            <input type="text" placeholder="Họ tên*">
+                            <input type="text" placeholder="Điện thoại*">
+                            <select class="ammount">
+                                <option value="2 Người">2 Người</option>
+                                <option value="3 Người">3 Người</option>
+                                <option value="4 Người">4 Người</option>
+                            </select>
+                            <input type="date" id="date" name="date">
+                            <select class="time">
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                            <input class="btn-yellow" type="submit" value="ĐẶT BÀN">
+                        </form>
+                    </div>
+                </div>
+                <div class="scsf__textbox">
+                    <div class="textbox">
+                        <p class="section">Some Facts</p>
+                        <h3 class="title">Enhancing Your Feelings</h3>
+                        <span class="after"></span>
+
+                        <p class="desc">From signature delights such as beef tartare and the best mashed potato in
+                            Paris,
+                            all the way to unique specialities
+                            such as thinly sliced Brittany artichokes with truffles.</p>
+                    </div>
+                    <div class="num_box">
+                        <div class="item">
+                            <span class="num">200+</span>
+                            <p class="text">Clients Every Day</p>
+                        </div>
+                        <div class="item">
+                            <span class="num">180+</span>
+                            <p class="text">Great Moments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scob">
+            <div class="container">
+                <div class="header_box">
+                    <p class="section">Our Blog</p>
+                    <h3 class="title">Be First Who Read News</h3>
+                    <span class="before-after"></span>
+                </div>
+                <div class="scob__blogs blogs">
+                    <a class="item" href="sukien-chitiet-extra.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/Trangchu/Trangchu-befirst-thumbnail.jpg" %}"
+                                alt="Trangchu-befirst-thumbnail"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet-extra.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/Trangchu/Trangchu-befirst-thumbnail2.jpg" %}"
+                                alt="Trangchu-befirst-thumbnail"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet-extra.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/Trangchu/Trangchu-befirst-thumbnail3.jpg" %}"
+                                alt="Trangchu-befirst-thumbnail"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                </div>
+                <a href="services.html" class="btn-blue">KHÁM PHÁ THÊM</a>
+            </div>
+        </section>
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}

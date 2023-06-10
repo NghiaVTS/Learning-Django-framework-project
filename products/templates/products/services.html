@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Services{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}services main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %} 
+    
+    <main>
+        <section class="scbanner">
+            <img src="{% static "img/dichvu/banner-bg.jpg"%}" alt="banner-bg" class="scbanner__bg">
+            <div class="container">
+                <div class="scbanner__textbox">
+                    <h3 class="scbanner__textbox-header">DỊCH VỤ</h3>
+                    <div class="scbanner__textbox-path">
+                        <p class="main">TRANG CHỦ</p>
+                        <span></span>
+                        <p class="linked">DỊCH VỤ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scos">
+            <div class="scos__header header_box">
+                <p class="section">Our services</p>
+                <h3 class="title">Best Service Possible</h3>
+                <span class="before-after"></span>
+            </div>
+            <div class="scos__sliders">
+                <a class="scos__sliders-item" href="dichvu-chitiet.html">
+                    <img src="{% static "img/dichvu/os-thumbnail1.jpg"%}" alt="os-thumbnail1" class="thumbnail">
+                    <h3 class="title">Fresh Products</h3>
+                </a>
+                <a class="scos__sliders-item" href="dichvu-chitiet.html">
+                    <img src="{% static "img/dichvu/os-thumbnail2.jpg"%}" alt="os-thumbnail1" class="thumbnail">
+                    <h3 class="title">Fresh Products</h3>
+                </a>
+                <a class="scos__sliders-item" href="dichvu-chitiet.html">
+                    <img src="{% static "img/dichvu/os-thumbnail3.jpg"%}" alt="os-thumbnail1" class="thumbnail">
+                    <h3 class="title">Fresh Products</h3>
+                </a>
+            </div>
+        </section>
+        <section class="scsb">
+            <div class="container">
+                <div class=".scsb__textbox">
+                    <div class="textbox">
+                        <p class="section">Some Benefits</p>
+                        <h3 class="header">Only Quality Coffee Beans</h3>
+                        <span class="after"></span>
+                    </div>
+                    <div class="scsb__textbox-boxes">
+                        <div class="item">
+                            <img src="{% static "img/dichvu/sb-bean-icon.png"%}" alt="sb-bean-icon" class="icon">
+                            <p class="desc">From signature delights such as beef tartare and best mashed potato in
+                                Paris, all the way to unique.</p>
+                        </div>
+                        <div class="item">
+                            <img src="{% static "img/dichvu/sb-bean-icon.png"%}" alt="sb-bean-icon" class="icon">
+                            <p class="desc">Sustainable fishing, rediscovered grains, exclusively grown vegetables from
+                                the queen’s garden.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="{% static "img/dichvu/sb-bean-icon.png"%}" alt="sb-bean-icon" class="icon">
+                            <p class="desc">Our cuisine interprets the concept of ‘nature generosity by celebrating the
+                                trilogy of fish, vegetables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scsb__thumbnail">
+                    <img src="{% static "img/dichvu/sb-thumbnail.jpg"%}" alt="sb-thumbnail" class="scsb__thumbnail-bg">
+                    <div class="scsb__thumbnail-content">
+                        <span class="title">Coffee Moments</span>
+                        <h4>Every 10 Coffee is Free</h4>
+                        <a class="header__btn btn-yellow" href="#"><span>KHÁM PHÁ THÊM</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scincrnum">
+            <div class="container">
+                <div class="scincrnum__item">
+                    <span class="num">200+</span>
+                    <p>Clients Every Day</p>
+                </div>
+                <div class="scincrnum__item">
+                    <span class="num">180+</span>
+                    <p>Great Moments</p>
+                </div>
+                <div class="scincrnum__item">
+                    <span class="num">350+</span>
+                    <p>Cups of Coffee Daily
+                    </p>
+                </div>
+                <div class="scincrnum__item">
+                    <span class="num">250+</span>
+                    <p>Types of Coffee</p>
+                </div>
+            </div>
+        </section>
+        <section class="scpp">
+            <span class="scpp__bg"></span>
+            <div class="container">
+                <div class="scpp__header header_box">
+                    <p class="section">Pricing Plan</p>
+                    <h3 class="title">Best Service Possible</h3>
+                    <span class="before-after"></span>
+                    <p class="bg">PRICE</p>
+                </div>
+                <div class="scpp__boxes">
+                    <div class="scpp__boxes-item">
+                        <div class="title">
+                            <p class="type">Royal Silver</p>
+                            <span class="price">1.000.000đ</span>
+                            <p class="each">/ NGƯỜI</p>
+                        </div>
+                        <div class="desc">
+                            <div class="line"><span></span></div>
+                            <h4>Reservation of 2 Tables
+                            </h4>
+                            <h4>Premium Service</h4>
+                            <h4>Multi-Language Waiters</h4>
+                        </div>
+                        <a class="btn btn-yellow" href="#"><span>ĐẶT BÀN</span></a>
+                    </div>
+                    <div class="scpp__boxes-item">
+                        <img src="{% static "img/dichvu/padding-item.png"%}" alt="padding-item" class="padding">
+                        <div class="title">
+                            <p class="type">Diamond Delights</p>
+                            <span class="price">1.000.000đ</span>
+                            <p class="each">/ NGƯỜI</p>
+                        </div>
+                        <div class="desc">
+                            <div class="line"><span></span></div>
+                            <h4>Only Premium Service
+                            </h4>
+                            <h4>Hall Rental for 20 People</h4>
+                            <h4>Multi-Language Waiters</h4>
+                            <h4>Best Personal Cook</h4>
+                        </div>
+                        <a class="btn btn-yellow" href="#"><span>ĐẶT BÀN</span></a>
+                    </div>
+                    <div class="scpp__boxes-item">
+                        <div class="title">
+                            <p class="type">Golden Care</p>
+                            <span class="price">1.000.000đ</span>
+                            <p class="each">/ NGƯỜI</p>
+                        </div>
+                        <div class="desc">
+                            <div class="line"><span></span></div>
+                            <h4>Reservation of 2 Tables
+                            </h4>
+                            <h4>Premium Service</h4>
+                            <h4>Multi-Language Waiters</h4>
+                        </div>
+                        <a class="btn btn-yellow" href="#"><span>ĐẶT BÀN</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scop">
+            <img src="{% static "img/dichvu/op-padding-left.jpg"%}" alt="op-padding-left" class="scop__padding">
+
+            <div class="scop__content">
+                <div class="scop__content-header header_box">
+                    <p class="section">Our Philosophy</p>
+                    <h3 class="title">Chef’s Words</h3>
+                    <span class="before-after"></span>
+                </div>
+                <div class="scop__content-desc">
+                    <span>Depending on the day of your visit to the restaurant, you will experience one of our
+                        creations.</span>
+                    <p>It spreads over three levels on the hillside, surrounded by lush vegetation. The elegant,
+                        spacious & light-drenched
+                        dining room commands a panoramic view of the sky, the sea and the town of Menton through the
+                        large windows running all
+                        the way around.</p>
+                    <img src="{% static "img/dichvu/op-signature.jpg"%}" alt="op-signature" class="signature">
+                </div>
+            </div>
+            <img src="{% static "img/dichvu/op-padding-right.jpg"%}" alt="op-padding-right" class="scop__padding">
+        </section>
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}

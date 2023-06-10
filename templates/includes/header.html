@@ -1,0 +1,40 @@
+{% load static %}
+
+<header class="header">
+        <div class="container-fluid">
+            <a href="{% url "home" %}" class="header__logo"><img src="{% static "img\Trangchu\Trangchu-logo.png" %}" alt="trangchu-logo"></a>
+            <ul class="header__menu">
+                <li><a href="{% url "home" %}" class="header__menu-item">TRANG CHỦ</a></li>
+                <li><a href="{% url "aboutUs"%}" class="header__menu-item">VỀ CHÚNG TÔI</a></li>
+                <li><a href="{% url "services"%}" class="header__menu-item">DỊCH VỤ</a></li>
+                <li><a href="{% url "events"%}" class="header__menu-item">SỰ KIỆN</a></li>
+                <li><a href="{% url "menu"%}" class="header__menu-item">THỰC ĐƠN</a></li>
+                <li><a href="{% url "diemden"%}" class="header__menu-item">ĐIỂM ĐẾN</a></li>
+                <li><a href="{% url "thuvien"%}" class="header__menu-item">THƯ VIỆN</a></li>
+                <li><a href="{% url "lienhe"%}" class="header__menu-item">LIÊN HỆ</a></li>
+            </ul>
+            <div class="right">
+                <div class="header__lang">
+                    <span>EN</span>
+                </div>
+                <a class="header__btn btn-yellow" href="{% url "submit" %}"><span>ĐẶT BÀN</span></a>
+                <div class="header__btnmenu"><span></span></div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="{% url "home" %}" class="header__menu-item">TRANG CHỦ</a></li>
+                    <li><a href="{% url "aboutUs"%}" class="header__menu-item">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="{% url "services"%}" class="header__menu-item">DỊCH VỤ</a></li>
+                    <li><a href="{% url "events"%}" class="header__menu-item">SỰ KIỆN</a></li>
+                    <li><a href="{% url "menu"%}" class="header__menu-item">THỰC ĐƠN</a></li>
+                    <li><a href="{% url "diemden"%}" class="header__menu-item">ĐIỂM ĐẾN</a></li>
+                    <li><a href="{% url "thuvien"%}" class="header__menu-item">THƯ VIỆN</a></li>
+                    <li><a href="{% url "lienhe"%}" class="header__menu-item">LIÊN HỆ</a></li>
+                </ul>
+                <div class="nav-lang">
+                    <span>EN</span>
+                </div>
+                <a class="nav-btn btn-yellow" href="{% url "submit" %}"><span>ĐẶT BÀN</span></a>
+            </div>
+        </div>
+    </header>

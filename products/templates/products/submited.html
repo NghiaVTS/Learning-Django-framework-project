@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Submit{% endblock %}
+{% block css %}{% static "products/submited.min.css" %}{% endblock%}
+
+{% block body %}
+{% include "includes/header.html" %}
+<main>
+    <section class="info">
+        <p>All submission:</p>
+
+        <table border='1'>
+            <tr>
+                <th>Name</th>
+                <th>phonenumber</th>
+                <th>ammount</th>
+                <th>date</th>
+                <th>time</th>
+            </tr>
+            {% for x in submit %}
+                <tr>
+                <td>{{ x.name }}</td>
+                <td>{{ x.phoneNumber }}</td>
+                <td>{{ x.ammount }}</td>
+                <td>{{ x.date }}</td>
+                <td>{{ x.time }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </section>
+</main>
+{% include "includes/footer.html" %}
+{% endblock %}            

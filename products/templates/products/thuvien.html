@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Thu vien{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}thuvien main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %}  
+    <main>
+        <section class="scbanner">
+            <img src="{% static "img/thuvien/banner-bg.jpg"%}" alt="banner-bg" class="scbanner__bg">
+            <div class="container">
+                <div class="scbanner__textbox">
+                    <h3 class="scbanner__textbox-header">THƯ VIỆN</h3>
+                    <div class="scbanner__textbox-path">
+                        <p class="main">TRANG CHỦ</p>
+                        <span></span>
+                        <p class="linked">THƯ VIỆN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scgallery">
+            <div class="container">
+                <div class="scgallery__tabs">
+                    <span>tất cả</span>
+                    <span>ẩm thực</span>
+                    <span>recipes</span>
+                    <span>nhà hàng</span>
+                    <span>cà phê</span>
+                </div>
+                <div class="wrap">
+                    <div class="scgallery__pics">
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img1.jpg"%}"
+                                alt="img1">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img2.jpg"%}"
+                                alt="img2">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img3.jpg"%}"
+                                alt="img3">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img4.jpg"%}"
+                                alt="img4">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img5.jpg"%}"
+                                alt="img5">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img6.jpg"%}"
+                                alt="img6">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img7.jpg"%}"
+                                alt="img7">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img8.jpg"%}"
+                                alt="img8">
+                        </div>
+                        <div class="scgallery__pics-img"><img data-fancybox="image" src="{% static "img/thuvien/img9.jpg"%}"
+                                alt="img9">
+                        </div>
+                    </div>
+                </div>
+                <a class="btn-blue" href="#"><span>KHÁM PHÁ THÊM</span></a>
+            </div>
+        </section>
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}

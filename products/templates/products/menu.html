@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Menu{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}menu main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %}  
+    <main>
+        <section class="scbanner">
+            <img src="{% static "img/menu/banner-bg.jpg"%}" alt="banner-bg" class="scbanner__bg">
+            <div class="container">
+                <div class="scbanner__textbox">
+                    <h3 class="scbanner__textbox-header">THỰC ĐƠN</h3>
+                    <div class="scbanner__textbox-path">
+                        <p class="main">TRANG CHỦ</p>
+                        <span></span>
+                        <p class="linked">THỰC ĐƠN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sccontent">
+            <div class="sccontent__menu">
+                <a class="item" href="#">
+                    <img src="{% static "img/menu/thumbnail1.jpg"%}" alt="thumbnail1" class="thumbnail">
+                    <div class="text">
+                        <p>Great Appetizer</p>
+                        <span></span>
+                    </div>
+                </a>
+                <a class="item" href="#">
+                    <img src="{% static "img/menu/thumbnail2.jpg"%}" alt="thumbnail2" class=" thumbnail">
+                    <div class="text">
+                        <p>Great Appetizer</p>
+                        <span></span>
+                    </div>
+                </a>
+                <a class="item" href="#">
+                    <img src="{% static "img/menu/thumbnail3.jpg"%}" alt="thumbnail3" class=" thumbnail">
+                    <div class="text">
+                        <p>Great Appetizer</p>
+                        <span></span>
+                    </div>
+                </a>
+                <a class="item" href="#">
+                    <img src="{% static "img/menu/thumbnail4.jpg"%}" alt="thumbnail4" class=" thumbnail">
+                    <div class="text">
+                        <p>Great Appetizer</p>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+            <a class="scblogs__btn btn-blue" href="#"><span>Xem Menu</span></a>
+        </section>
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}

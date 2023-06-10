@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Diem den{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}diemden main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %}  
+    <main>
+        <section class="scbanner">
+            <img src="{% static "img/diemden/banner-bg.jpg"%}" alt="banner-bg" class="scbanner__bg">
+            <div class="container">
+                <div class="scbanner__textbox">
+                    <h3 class="scbanner__textbox-header">ĐIỂM ĐẾN</h3>
+                    <div class="scbanner__textbox-path">
+                        <p class="main">TRANG CHỦ</p>
+                        <span></span>
+                        <p class="linked">ĐIỂM ĐẾN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scgallery">
+            <div class="container">
+                <div class="scgallery__wrap">
+                    <div class="gallery">
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img1.jpg"%}" alt="img1"></a>
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img2.jpg"%}" alt="img2"></a>
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img3.jpg"%}" alt="img3"></a>
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img4.jpg"%}" alt="img4"></a>
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img5.jpg"%}" alt="img5"></a>
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img6.jpg"%}" alt="img6"></a>
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img7.jpg"%}" alt="img7"></a>
+                        <a href="diemden-chitiet.html" class="item"><img src="{% static "img/diemden/img8.jpg"%}" alt="img8"></a>
+                    </div>
+                </div>
+                <a class="btn-blue" href="#"><span>KHÁM PHÁ THÊM</span></a>
+            </div>
+        </section>
+
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}

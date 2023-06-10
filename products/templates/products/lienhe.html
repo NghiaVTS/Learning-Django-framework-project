@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Lien he{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}lienhe main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %}  
+    <main>
+        <section class="scbanner">
+            <img src="{% static "img/lienhe/banner-bg.jpg"%}" alt="banner-bg" class="scbanner__bg">
+            <div class="container">
+                <div class="scbanner__textbox">
+                    <h3 class="scbanner__textbox-header">LIÊN HỆ</h3>
+                    <div class="scbanner__textbox-path">
+                        <p class="main">TRANG CHỦ</p>
+                        <span></span>
+                        <p class="linked">LIÊN HỆ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scoc">
+            <div class="container">
+                <div class="scoc__form form">
+                    <img src="{% static "img/Trangchu/Trangchu-form-padding.png"%}" alt="Trangchu-form-padding" class="form-padding">
+                    <div class="form-box">
+                        <span class="title">Make a Reserve</span>
+                        <form>
+                            <input type="text" placeholder="Họ tên*">
+                            <input type="text" placeholder="Điện thoại*">
+                            <select class="ammount">
+                                <option value="2 Người">2 Người</option>
+                                <option value="3 Người">3 Người</option>
+                                <option value="4 Người">4 Người</option>
+                            </select>
+                            <input type="date" id="date" name="date">
+                            <select class="time">
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                            <div class="btn">
+                                <input class="btn-yellow" type="submit" value="ĐẶT BÀN">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="scoc__content textbox">
+                    <p class="section">Our Contact</p>
+                    <h3 class="header">Contact Us</h3>
+                    <span class="after"></span>
+
+                    <div class="desc">
+                        <p>Get in touch to discuss your employee wellbeing needs today. Please give us a call, drop us
+                            an
+                            email or fill out the
+                            contact form and we’ll get back to you.</p>
+                        <div class="info">
+                            <div class="item">
+                                <div class="icon"><img src="{% static "img/lienhe/location-icon.png"%}" alt="location-icon"></div>
+                                <div class="text">
+                                    <span>We are Here:</span>
+                                    <p>5 Rue Dalou, 75015 Paris</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><img src="{% static "img/lienhe/phone-icon.png"%}" alt="phone-icon"></div>
+                                <div class="text">
+                                    <span>Phone Us:
+                                    </span>
+                                    <p>+33 123 45 56 78</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><img src="{% static "img/lienhe/email-icon.png"%}" alt="email-icon"></div>
+                                <div class="text">
+                                    <span>Mail Us:</span>
+                                    <p>info@sunsetsorrento.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fanpage">
+                            <a href="#" target="_blank"><img src="{% static "img/lienhe/twitter-icon.png"%}" alt="twitter-icon"></a>
+                            <a href="#" target="_blank"><img src="{% static "img/lienhe/fb-icon.png"%}" alt="fb-icon"></a>
+                            <a href="#" target="_blank"><img src="{% static "img/lienhe/lnd-icon.png"%}" alt="lnd-icon"></a>
+                            <a href="#" target="_blank"><img src="{% static "img/lienhe/ins-icon.png"%}" alt="ins-icon"></a>
+                            <a href="#" target="_blank"><img src="{% static "img/lienhe/yt-icon.png"%}" alt="yt-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container">
+
+            </div>
+        </section>
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}

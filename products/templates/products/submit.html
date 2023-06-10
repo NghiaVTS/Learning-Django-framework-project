@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Submit{% endblock %}
+{% block css %}{% static "products/submit.min.css" %}{% endblock%}
+
+{% block body %}
+{% include "includes/header.html" %}
+<main>
+        <section id="submit">
+                <form method="POST">
+                        {% csrf_token %}
+                        {{ form.name.label_tag }}
+                        {% for error in form.name.errors %}
+                                <p style="color:red">{{error}}</p>
+                        {% endfor %}
+                        {{ form.name }}<br>
+                        {{ form.phoneNumber.label_tag }}
+                        {% for error in form.phoneNumber.errors %}
+                                <p style="color:red">{{error}}</p>
+                        {% endfor %}
+                        {{ form.phoneNumber }}<br>
+                        {{ form.ammount.label_tag }}
+                        {% for error in form.ammount.errors %}
+                                <p style="color:red">{{error}}</p>
+                        {% endfor %}
+                        {{ form.ammount }}<br>
+                        {{ form.date.label_tag }}
+                        
+                        {% for error in form.date.errors %}
+                                <p style="color:red">{{error}}</p>
+                        {% endfor %}
+                        {{ form.date }}
+                        <p style="font-size:12px">"year-month-day"</p><br>
+                        {{ form.time.label_tag }}
+                        
+                        {% for error in form.time.errors %}
+                                <p style="color:red">{{error}}</p>
+                        {% endfor %}
+                        {{ form.time }}
+                        <p style="font-size:12px">"hour : minute"</p><br>
+                        <button class="btn-yellow" type="submit"><span>ĐẶT BÀN</span></button><br>
+                        {% if messages %}
+                                {% for message in messages %}
+                                        <p style="color:green">{{message}}</p>
+                                {% endfor %}
+                        {% endif %}
+
+
+                        {% comment %} <label for="name">Họ tên*:</label>
+                        <input class="field" type="text" id="name" name="name" required>
+
+                         <label for="phonenumber">Điện thoại*:</label>
+                        <input class="field" type="phonenumber" id="phonenumber" required>
+
+                        <label for="ammount">Số người*:</label>
+                        <select class="ammount">
+                                <option value="2 Người">2 Người</option>
+                                <option value="3 Người">3 Người</option>
+                                <option value="4 Người">4 Người</option>
+                        </select>
+
+                        <label for="inputDate">Choose Day:</label>
+                        <input class="date" type="date" required>
+
+                        <label for="time">Thời gian*:</label>
+                        <select class="time">
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                        </select> {% endcomment %}
+                </form>
+        </section>
+</main>
+
+{% include "includes/footer.html" %}
+{% endblock %}

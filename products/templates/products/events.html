@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Events{% endblock %}
+{% block css %}{% static "products/style.min.css" %}{% endblock%}
+
+{% block classbody %}events main{%endblock%}
+{% block body %}
+    {% include "includes/header.html" %} 
+    <main>
+        <section class="scbanner">
+            <img src="{% static "img/events/banner-bg.jpg"%}" alt="banner-bg" class="scbanner__bg">
+            <div class="container">
+                <div class="scbanner__textbox">
+                    <h3 class="scbanner__textbox-header">SỰ KIỆN</h3>
+                    <div class="scbanner__textbox-path">
+                        <p class="main">TRANG CHỦ</p>
+                        <span></span>
+                        <p class="linked">SỰ KIỆN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scblogs">
+            <div class="container">
+                <div class="blogs">
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog1.jpg"%}" alt="blog1"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog2.jpg"%}" alt="blog2"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog3.jpg"%}" alt="blog3"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog1.jpg"%}" alt="blog1"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog2.jpg"%}" alt="blog2"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog3.jpg"%}" alt="blog3"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog1.jpg"%}" alt="blog1"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog2.jpg"%}" alt="blog2"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                    <a class="item" href="sukien-chitiet.html">
+                        <div class="img"><img class="thumbnail" src="{% static "img/events/blog3.jpg"%}" alt="blog3"></div>
+                        <div class="textbox">
+                            <div class="section">
+                                <p>March 27, 2021</p>
+                                <span></span>
+                                <p>Restaurants</p>
+                            </div>
+                            <h4 class="title">Elegant Dessert: 10 Tips How to Make It at Home</h4>
+                        </div>
+                    </a>
+                </div>
+                <a class="scblogs__btn btn-blue" href="#"><span>KHÁM PHÁ THÊM</span></a>
+            </div>
+        </section>
+    </main>
+    {% include "includes/footer.html" %} 
+    <script src="{% static "JS/_jquery.js"%}"></script>
+    <script src="{% static "JS/flickity.pkgd.min.js"%}"></script>
+    <script src="{% static "JS/fancybox.js"%}"></script>
+    <script src="{% static "JS/main.js"%}"></script>
+{% endblock %}
