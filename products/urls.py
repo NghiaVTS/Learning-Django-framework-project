@@ -13,5 +13,5 @@ urlpatterns = [
     path('menu', views.menu, name="menu"),
     path('diemden', views.diemden, name="diemden"),
     path('thuvien', views.thuvien, name="thuvien"),
-    path('lienhe', views.thuvien, name="lienhe"),
+    path('lienhe', views.lienhe, name="lienhe"),
 ]
